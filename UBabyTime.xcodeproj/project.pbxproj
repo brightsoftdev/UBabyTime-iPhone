@@ -1,0 +1,284 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF189E861515C8D10046FCEE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF189E851515C8D10046FCEE /* UIKit.framework */; };
+		DF189E881515C8D10046FCEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF189E871515C8D10046FCEE /* Foundation.framework */; };
+		DF189E8A1515C8D10046FCEE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF189E891515C8D10046FCEE /* CoreGraphics.framework */; };
+		DF189E8C1515C8D10046FCEE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF189E8B1515C8D10046FCEE /* CoreData.framework */; };
+		DF189E921515C8D10046FCEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF189E901515C8D10046FCEE /* InfoPlist.strings */; };
+		DF189E941515C8D10046FCEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF189E931515C8D10046FCEE /* main.m */; };
+		DF189E981515C8D10046FCEE /* UBTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF189E971515C8D10046FCEE /* UBTAppDelegate.m */; };
+		DF189E9B1515C8D10046FCEE /* UBabyTime.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF189E991515C8D10046FCEE /* UBabyTime.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DF189E811515C8D10046FCEE /* UBabyTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UBabyTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF189E851515C8D10046FCEE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DF189E871515C8D10046FCEE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DF189E891515C8D10046FCEE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DF189E8B1515C8D10046FCEE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DF189E8F1515C8D10046FCEE /* UBabyTime-Info.plist */ = {isa = PBXFileReference; path = "UBabyTime-Info.plist"; sourceTree = "<group>"; };
+		DF189E911515C8D10046FCEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DF189E931515C8D10046FCEE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DF189E951515C8D10046FCEE /* UBabyTime-Prefix.pch */ = {isa = PBXFileReference; path = "UBabyTime-Prefix.pch"; sourceTree = "<group>"; };
+		DF189E961515C8D10046FCEE /* UBTAppDelegate.h */ = {isa = PBXFileReference; path = UBTAppDelegate.h; sourceTree = "<group>"; };
+		DF189E971515C8D10046FCEE /* UBTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBTAppDelegate.m; sourceTree = "<group>"; };
+		DF189E9A1515C8D10046FCEE /* UBabyTime.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UBabyTime.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF189E7E1515C8D10046FCEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF189E861515C8D10046FCEE /* UIKit.framework in Frameworks */,
+				DF189E881515C8D10046FCEE /* Foundation.framework in Frameworks */,
+				DF189E8A1515C8D10046FCEE /* CoreGraphics.framework in Frameworks */,
+				DF189E8C1515C8D10046FCEE /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF189E761515C8D00046FCEE = {
+			isa = PBXGroup;
+			children = (
+				DF189E8D1515C8D10046FCEE /* UBabyTime */,
+				DF189E841515C8D10046FCEE /* Frameworks */,
+				DF189E821515C8D10046FCEE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF189E821515C8D10046FCEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF189E811515C8D10046FCEE /* UBabyTime.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF189E841515C8D10046FCEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF189E851515C8D10046FCEE /* UIKit.framework */,
+				DF189E871515C8D10046FCEE /* Foundation.framework */,
+				DF189E891515C8D10046FCEE /* CoreGraphics.framework */,
+				DF189E8B1515C8D10046FCEE /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF189E8D1515C8D10046FCEE /* UBabyTime */ = {
+			isa = PBXGroup;
+			children = (
+				DF189E961515C8D10046FCEE /* UBTAppDelegate.h */,
+				DF189E971515C8D10046FCEE /* UBTAppDelegate.m */,
+				DF189E991515C8D10046FCEE /* UBabyTime.xcdatamodeld */,
+				DF189E8E1515C8D10046FCEE /* Supporting Files */,
+			);
+			path = UBabyTime;
+			sourceTree = "<group>";
+		};
+		DF189E8E1515C8D10046FCEE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF189E8F1515C8D10046FCEE /* UBabyTime-Info.plist */,
+				DF189E901515C8D10046FCEE /* InfoPlist.strings */,
+				DF189E931515C8D10046FCEE /* main.m */,
+				DF189E951515C8D10046FCEE /* UBabyTime-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF189E801515C8D10046FCEE /* UBabyTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF189E9E1515C8D10046FCEE /* Build configuration list for PBXNativeTarget "UBabyTime" */;
+			buildPhases = (
+				DF189E7D1515C8D10046FCEE /* Sources */,
+				DF189E7E1515C8D10046FCEE /* Frameworks */,
+				DF189E7F1515C8D10046FCEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UBabyTime;
+			productName = UBabyTime;
+			productReference = DF189E811515C8D10046FCEE /* UBabyTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF189E781515C8D00046FCEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = DF189E7B1515C8D00046FCEE /* Build configuration list for PBXProject "UBabyTime" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DF189E761515C8D00046FCEE;
+			productRefGroup = DF189E821515C8D10046FCEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF189E801515C8D10046FCEE /* UBabyTime */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF189E7F1515C8D10046FCEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF189E921515C8D10046FCEE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF189E7D1515C8D10046FCEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF189E941515C8D10046FCEE /* main.m in Sources */,
+				DF189E981515C8D10046FCEE /* UBTAppDelegate.m in Sources */,
+				DF189E9B1515C8D10046FCEE /* UBabyTime.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DF189E901515C8D10046FCEE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF189E911515C8D10046FCEE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF189E9C1515C8D10046FCEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF189E9D1515C8D10046FCEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF189E9F1515C8D10046FCEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UBabyTime/UBabyTime-Prefix.pch";
+				INFOPLIST_FILE = "UBabyTime/UBabyTime-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DF189EA01515C8D10046FCEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UBabyTime/UBabyTime-Prefix.pch";
+				INFOPLIST_FILE = "UBabyTime/UBabyTime-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF189E7B1515C8D00046FCEE /* Build configuration list for PBXProject "UBabyTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF189E9C1515C8D10046FCEE /* Debug */,
+				DF189E9D1515C8D10046FCEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF189E9E1515C8D10046FCEE /* Build configuration list for PBXNativeTarget "UBabyTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF189E9F1515C8D10046FCEE /* Debug */,
+				DF189EA01515C8D10046FCEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DF189E991515C8D10046FCEE /* UBabyTime.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DF189E9A1515C8D10046FCEE /* UBabyTime.xcdatamodel */,
+			);
+			currentVersion = DF189E9A1515C8D10046FCEE /* UBabyTime.xcdatamodel */;
+			path = UBabyTime.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DF189E781515C8D00046FCEE /* Project object */;
+}
