@@ -11,12 +11,14 @@
 @implementation UBTAppDelegate
 
 @synthesize window = _window;
+@synthesize rootViewController = _rootViewController;
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
 
 - (void)dealloc
 {
+    [_rootViewController release];
     [_window release];
     [__managedObjectContext release];
     [__managedObjectModel release];
@@ -24,11 +26,14 @@
     [super dealloc];
 }
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    _rootViewController = [[RootViewController alloc] init];
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:_rootViewController];
+    navigationController.navigationBarHidden = YES;
+    self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -58,9 +63,8 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-    /*
-     Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-     */
+//    [window makeKeyAndVisible];
+//	[((UINavigationController *)rootViewController.selectedViewController) performSelector:@selector(viewWillAppear:) withObject:nil afterDelay:0.1];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
