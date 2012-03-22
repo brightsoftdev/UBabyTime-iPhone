@@ -33,6 +33,7 @@ typedef void (^PopPageMnuallyCompletion)(void);
 @property (nonatomic, readonly) NSMutableArray *labelPages;
 @property (nonatomic, readonly) NSUInteger pageIndex;
 @property (nonatomic) NSUInteger pageCount;
+@property (nonatomic) NSUInteger currentParentLabelIndex;
 @property (nonatomic, assign) id<LabelBarViewControllerDelegate> delegate;
 @property (nonatomic, readonly) NSUInteger parentLabelCount;
 @property (nonatomic, readonly,getter = isSelectUserLock) BOOL selectUserLock;

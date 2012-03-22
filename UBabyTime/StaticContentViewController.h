@@ -20,8 +20,8 @@
 @property (nonatomic, retain) UIViewController *currentController;
 @property (nonatomic,assign)  NSString *labelIdentifier;
 
--(id)initWithLabelIdentifier:(NSString *)labelIdentifier;
--(void)addContentByLabelIdentifier:(NSString*)labelIdentifier;
+-(void)loadContentByLabelIdentifier:(NSString*)labelIdentifier;
+-(void)loadContentByLabelIdentifier:(NSString*)labelIdentifier withAnimationOptions:(UIViewAnimationOptions)options;
 
 @end
 

@@ -29,7 +29,7 @@
 @synthesize delegate = _delegate;
 @synthesize selectUserLock = _selectUserLock;
 @synthesize loginButton = _loginButton;
-
+@synthesize currentParentLabelIndex = _currentParentLabelIndex;
 - (id)init {
     self = [super init];
     if(self) {

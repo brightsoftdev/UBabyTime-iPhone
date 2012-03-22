@@ -62,15 +62,17 @@
 
 - (void)loadFakeContentView {
     [self.contentViewController.view removeFromSuperview];
-    self.contentViewController = [[[StaticContentViewController alloc] initWithLabelIdentifier:@"test"] autorelease];
+    self.contentViewController = [[[StaticContentViewController alloc] init] autorelease];
+    [self.contentViewController loadContentByLabelIdentifier:@"test"];
     self.contentViewController.view.frame = CGRectMake(CONTENT_VIEW_ORIGIN_X, CONTENT_VIEW_ORIGIN_Y, self.contentViewController.view.frame.size.width, self.contentViewController.view.frame.size.height);
     [self.view insertSubview:self.contentViewController.view belowSubview:self.labelBarViewController.view];
     self.contentViewController.view.userInteractionEnabled = NO;
 }
 
 - (void)loadContentView {
-   [self.contentViewController.view removeFromSuperview];
-    self.contentViewController = [[[StaticContentViewController alloc] initWithLabelIdentifier:@"test"] autorelease];
+    [self.contentViewController.view removeFromSuperview];
+    self.contentViewController = [[[StaticContentViewController alloc] init] autorelease];
+    [self.contentViewController loadContentByLabelIdentifier:@"test"];
     self.contentViewController.view.frame = CGRectMake(CONTENT_VIEW_ORIGIN_X, CONTENT_VIEW_ORIGIN_Y, self.contentViewController.view.frame.size.width, self.contentViewController.view.frame.size.height);
     [self.view insertSubview:self.contentViewController.view belowSubview:self.labelBarViewController.view];
     self.contentViewController.view.userInteractionEnabled = YES;
@@ -107,8 +109,11 @@
 #pragma mark -
 #pragma mark LabelBarViewController delegate
 - (void)labelBarView:(LabelBarViewController *)labelBar didSelectParentLabelAtIndex:(NSUInteger)index {
-    NSLog(@"labelBarView:%@ didSelectParentLabelAtIndex:%d",labelBar,index);
-    //self.contentViewController.currentContentIndex = index;
+    NSLog(@"labelBarView:%@ didSelectParentLabelAtIndex:%d,labelBar.currentParentLabelIndex:%d",[labelBar labelInfoArray],index,labelBar.currentParentLabelIndex);
+    if(labelBar.currentParentLabelIndex!=index){
+        LabelInfo *labelInfo = [[labelBar labelInfoArray] objectAtIndex:index];
+        [self.contentViewController loadContentByLabelIdentifier:labelInfo.identifier];
+    }
 }
 
 - (void)labelBarView:(LabelBarViewController *)labelBar didSelectChildLabelWithIndentifier:(NSString *)identifier inParentLabelAtIndex:(NSUInteger)index {

@@ -17,29 +17,29 @@
 @synthesize labelIdentifier = _labelIdentifier;
 @synthesize currentController = _currentController;
 
--(id)initWithLabelIdentifier:(NSString *)labelIdentifier{
-    self = [self init];
-    if(self){
-        _labelIdentifier = labelIdentifier;
-    }
-    return self;
+
+-(void)loadContentByLabelIdentifier:(NSString*)labelIdentifier withAnimationOptions:(UIViewAnimationOptions)options{
+    UIViewController *vc = [self findContentViewByLabelIndentifier:labelIdentifier];
+    [UIView transitionWithView:self.view duration:0.5 options:options animations:^{
+        [self.currentController.view removeFromSuperview];
+        [self.view addSubview:vc.view];
+    } completion:NULL];
+    
+    self.currentController = vc;
 }
 
--(void)addContentByLabelIdentifier:(NSString*)labelIdentifier{
-    UIViewController *vc = [self findContentViewByLabelIndentifier:labelIdentifier];
-    [self.view addSubview:vc.view];
-    self.currentController = vc;
-    [vc release];
+-(void)loadContentByLabelIdentifier:(NSString*)labelIdentifier{
+    [self loadContentByLabelIdentifier:labelIdentifier withAnimationOptions:UIViewAnimationOptionTransitionFlipFromLeft];
 }
 
 -(id)findContentViewByLabelIndentifier:(NSString*)labelIdentifier{
     if([labelIdentifier isEqualToString:@"test"]){
         CoverViewController *cvc = [[CoverViewController alloc] initWithCoverViewDelegate:self];
-        return cvc;
+        return [cvc autorelease];
     }else{
         ArticleViewController *avc = [[ArticleViewController alloc] initWithNibName:@"ArticleViewController" bundle:nil];
         avc.controllerDelegate = self;
-        return avc;
+        return [avc autorelease];
     }
     
 }
@@ -53,30 +53,13 @@
 #pragma mark - CoverViewDelegate
 
 -(void)proposalDetailButtonClick:(id)sender;{
-    NSLog(@"test");
-    [UIView transitionWithView:self.view 
-                    duration:0.5 
-                    options:UIViewAnimationOptionTransitionFlipFromLeft //any animation
-                    animations:^ {
-                        [_currentController.view removeFromSuperview];
-                        [self addContentByLabelIdentifier:@"article"]; 
-                        
-                    }
-                    completion:NULL];
+    [self loadContentByLabelIdentifier:@"article"];
 }
 
 #pragma mark - ArticleViewControllerDelegate
 
 -(void)backButtonClick:(id)sender{
-    [UIView transitionWithView:self.view 
-                      duration:0.5 
-                       options:UIViewAnimationOptionTransitionFlipFromLeft //any animation
-                    animations:^ {
-                        [_currentController.view removeFromSuperview];
-                        [self addContentByLabelIdentifier:@"test"]; 
-                        
-                    }
-                    completion:NULL];
+    [self loadContentByLabelIdentifier:@"test"];
 }
 
 
@@ -85,7 +68,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self addContentByLabelIdentifier:_labelIdentifier];
 }
 
 - (void)viewDidUnload
