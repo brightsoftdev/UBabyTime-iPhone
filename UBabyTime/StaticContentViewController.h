@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
+#import "LabelConverter.h"
 #import "CoverViewController.h"
+#import "TimeLineViewController.h"
+#import "CMTableViewController.h"
 @protocol StaticContentViewControllerDelegate;
 
 @interface StaticContentViewController : UIViewController<CoverViewDelegate,ArticleViewControllerDelegate>

@@ -11,7 +11,7 @@
 
 @protocol CoverViewDelegate;
 
-@interface CoverView : UIView<NIPagingScrollViewPage>
+@interface CoverView : UITableViewCell<NIPagingScrollViewPage>
 @property (nonatomic, retain) IBOutlet UIView *titleView;
 @property (nonatomic, retain) IBOutlet UIView *tipsView;
 @property (nonatomic, retain) IBOutlet UIView *proposalView;

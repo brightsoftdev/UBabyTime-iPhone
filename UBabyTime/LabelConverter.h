@@ -8,37 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-#define kParentNewFeed          @"kParentNewFeed"
-#define kChildAllSelfNewFeed    @"kChildAllSelfNewFeed"
-#define kChildRenrenSelfNewFeed @"kChildRenrenSelfNewFeed"
-#define kChildWeiboSelfNewFeed  @"kChildWeiboSelfNewFeed"
+#define kTodayTips          @"kTodayTips"
 
-#define KParentUserInfo         @"kParentUserInfo"
-#define kChildRenrenNewFeed     @"kChildRenrenNewFeed"
-#define kChildWeiboNewFeed      @"kChildWeiboNewFeed"
-#define kChildRenrenAlbum       @"kChildAlbum"
-#define kChildRenrenBlog        @"kChildBlog"
-#define kChildRenrenInfo        @"kChildRenrenInfo"
-#define kChildWeiboInfo         @"kChildWeiboInfo"
-#define kChildCurrentRenrenInfo @"kChildCurrentRenrenInfo"
-#define kChildCurrentWeiboInfo  @"kChildCurrentWeiboInfo"
+#define kCheckList         @"kCheckList"
+#define kTodayTipsArticle    @"kCheckArticleList"
+#define kTodayTipsProposal @"kCheckProposalList"
 
-#define kParentFriend       @"kParentFriend"
-#define kChildRenrenFriend  @"kChildRenrenFriend"
-#define kChildWeiboFriend   @"kChildWeiboFriend"
-#define kChildWeiboFollower @"kChildWeiboFollower"
-#define kChildCurrentWeiboFriend    @"kChildCurrentWeiboFriend"
-#define kChildCurrentWeiboFollower  @"kChildCurrentWeiboFollower"
+#define kQuestionAndAnswer       @"kQuestionAndAnswer"
 
-#define kParentInbox        @"kParentInbox"
-#define kChildNewMessage    @"kChildNewMessage"
-#define kChildNewFriend     @"kChildNewFriend"
-
-#define kParentRenrenUser       @"kParentRenrenUser"
-#define kChildRenrenUserNewFeed @"kChildRenrenUserNewFeed"
-#define kChildRenrenUserBlog    @"kChildRenrenUserBlog"
-
-#define kParentWeiboUser        @"kParentWeiboUser"
+#define kSearchInfo        @"kSearchInfo"
 
 #define kSystemDefaultLabels    @"kSystemDefaultLabels"
 #define kLabelName              @"kLabelName"
@@ -46,7 +24,9 @@
 #define kChildLabels            @"kChildLabels"
 #define kLabelIsParent          @"kLabelIsParent"
 
-#define kParentPublication  @"kParentPublication"
+#define kParentWeiboUser        @"kParentWeiboUser"
+#define kParentRenrenUser       @"kParentRenrenUser"
+
 
 @class LabelInfo;
 

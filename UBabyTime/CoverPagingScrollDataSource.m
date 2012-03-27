@@ -29,7 +29,7 @@
  * paging scroll view before allocating a new page.
  */
 - (UIView<NIPagingScrollViewPage> *)pagingScrollView:(NIPagingScrollView *)pagingScrollView pageViewForIndex:(NSInteger)pageIndex{
-   NSArray *views = [[NSBundle mainBundle] loadNibNamed:@"CoverView" owner:nil options:nil];
+    NSArray *views = [[NSBundle mainBundle] loadNibNamed:@"CoverView" owner:nil options:nil];
     CoverView *view = [views lastObject];
     view.coverViewDelegate = _coverViewDelegate;
     return  view;

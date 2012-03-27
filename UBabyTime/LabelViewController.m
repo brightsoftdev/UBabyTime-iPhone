@@ -146,7 +146,7 @@
 }
 
 - (void)configureBackgroundImage {
-    return; // 删除return开启label background
+    //return; // 删除return开启label background
     if(self.info.bgImage) {
         self.photoImageView.image = self.info.bgImage;
         self.photoImageView.alpha = kCustomHalfAlpha;

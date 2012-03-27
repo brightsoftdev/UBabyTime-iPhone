@@ -33,9 +33,12 @@
 }
 
 -(id)findContentViewByLabelIndentifier:(NSString*)labelIdentifier{
-    if([labelIdentifier isEqualToString:@"test"]){
+    if([labelIdentifier isEqualToString:kTodayTips]){
         CoverViewController *cvc = [[CoverViewController alloc] initWithCoverViewDelegate:self];
         return [cvc autorelease];
+    }if ([labelIdentifier isEqualToString:kCheckList]) {
+        CMTableViewController *tvc = [[CMTableViewController alloc] init];
+        return [tvc autorelease];
     }else{
         ArticleViewController *avc = [[ArticleViewController alloc] initWithNibName:@"ArticleViewController" bundle:nil];
         avc.controllerDelegate = self;
