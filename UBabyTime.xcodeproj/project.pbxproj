@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF01107E1522A49000DD843C /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = DF01107D1522A49000DD843C /* NSDate+Helper.m */; };
 		DF15267A1516E6D200EE97D2 /* NIPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1526741516E6D200EE97D2 /* NIPageView.m */; };
 		DF15267B1516E6D200EE97D2 /* NIPagingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1526761516E6D200EE97D2 /* NIPagingScrollView.m */; };
 		DF15267E1516EA0C00EE97D2 /* ArticlePagingScrollDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DF15267D1516EA0C00EE97D2 /* ArticlePagingScrollDataSource.m */; };
@@ -138,14 +139,11 @@
 		DF84995A1519B61400D1F749 /* photo_frame.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8499581519B61400D1F749 /* photo_frame.png */; };
 		DF8499601519BAA600D1F749 /* CoverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF84995E1519BAA600D1F749 /* CoverView.xib */; };
 		DF8499621519C56200D1F749 /* sample-baby.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF8499611519C56200D1F749 /* sample-baby.jpg */; };
-		DF8499651519C6BE00D1F749 /* cover_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8499631519C6BE00D1F749 /* cover_bg.png */; };
-		DF8499661519C6BE00D1F749 /* cover_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF8499641519C6BE00D1F749 /* cover_bg@2x.png */; };
 		DF84996A1519D22B00D1F749 /* StaticContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8499681519D22800D1F749 /* StaticContentViewController.m */; };
 		DF84996B1519D22B00D1F749 /* StaticContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF8499691519D22900D1F749 /* StaticContentViewController.xib */; };
 		DF84996E1519DAC200D1F749 /* CoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF84996D1519DAC200D1F749 /* CoverView.m */; };
 		DF8499711519DD8F00D1F749 /* CoverPagingScrollDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8499701519DD8F00D1F749 /* CoverPagingScrollDataSource.m */; };
 		DF8499741519DF0700D1F749 /* CoverPagingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8499731519DF0600D1F749 /* CoverPagingScrollView.m */; };
-		DFCD26BB151743F000E12DE8 /* tabview_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCD26BA151743F000E12DE8 /* tabview_bg.png */; };
 		DFCD26BD1517470C00E12DE8 /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFCD26BC1517470C00E12DE8 /* TestView.xib */; };
 		DFCD26C01517490C00E12DE8 /* ArticlePagingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCD26BF1517490C00E12DE8 /* ArticlePagingScrollView.m */; };
 		DFD625CE151A0AC700902D84 /* CoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD625CC151A0AC700902D84 /* CoverViewController.m */; };
@@ -224,7 +222,6 @@
 		DFDE4332151873A6002DAB40 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDE4330151873A4002DAB40 /* ContentViewController.m */; };
 		DFDE4333151873A6002DAB40 /* ContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDE4331151873A5002DAB40 /* ContentViewController.xib */; };
 		DFDE4336151877EF002DAB40 /* UIApplication+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDE4335151877EF002DAB40 /* UIApplication+Addition.m */; };
-		DFDE433815187B1D002DAB40 /* article_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = DFDE433715187B1C002DAB40 /* article_bg.png */; };
 		DFDE433B1518822E002DAB40 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DFDE43391518822E002DAB40 /* Default.png */; };
 		DFDE433C1518822E002DAB40 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFDE433A1518822E002DAB40 /* Default@2x.png */; };
 		DFDE433E15188D4F002DAB40 /* content_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFDE433D15188D4E002DAB40 /* content_bg@2x.png */; };
@@ -235,6 +232,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF01107C1522A49000DD843C /* NSDate+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helper.h"; sourceTree = "<group>"; };
+		DF01107D1522A49000DD843C /* NSDate+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helper.m"; sourceTree = "<group>"; };
 		DF1526711516E6D200EE97D2 /* NimbusPagingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NimbusPagingScrollView.h; path = ../nimbus/src/pagingscrollview/src/NimbusPagingScrollView.h; sourceTree = "<group>"; };
 		DF1526721516E6D200EE97D2 /* NimbusPagingScrollView+Namespace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NimbusPagingScrollView+Namespace.h"; path = "../nimbus/src/pagingscrollview/src/NimbusPagingScrollView+Namespace.h"; sourceTree = "<group>"; };
 		DF1526731516E6D200EE97D2 /* NIPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NIPageView.h; path = ../nimbus/src/pagingscrollview/src/NIPageView.h; sourceTree = "<group>"; };
@@ -423,8 +422,6 @@
 		DF8499581519B61400D1F749 /* photo_frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo_frame.png; sourceTree = "<group>"; };
 		DF84995E1519BAA600D1F749 /* CoverView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoverView.xib; sourceTree = "<group>"; };
 		DF8499611519C56200D1F749 /* sample-baby.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sample-baby.jpg"; sourceTree = "<group>"; };
-		DF8499631519C6BE00D1F749 /* cover_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover_bg.png; sourceTree = "<group>"; };
-		DF8499641519C6BE00D1F749 /* cover_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cover_bg@2x.png"; sourceTree = "<group>"; };
 		DF8499671519D22700D1F749 /* StaticContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticContentViewController.h; sourceTree = "<group>"; };
 		DF8499681519D22800D1F749 /* StaticContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticContentViewController.m; sourceTree = "<group>"; };
 		DF8499691519D22900D1F749 /* StaticContentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StaticContentViewController.xib; sourceTree = "<group>"; };
@@ -434,7 +431,6 @@
 		DF8499701519DD8F00D1F749 /* CoverPagingScrollDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoverPagingScrollDataSource.m; sourceTree = "<group>"; };
 		DF8499721519DF0600D1F749 /* CoverPagingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverPagingScrollView.h; sourceTree = "<group>"; };
 		DF8499731519DF0600D1F749 /* CoverPagingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoverPagingScrollView.m; sourceTree = "<group>"; };
-		DFCD26BA151743F000E12DE8 /* tabview_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabview_bg.png; sourceTree = "<group>"; };
 		DFCD26BC1517470C00E12DE8 /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
 		DFCD26BE1517490C00E12DE8 /* ArticlePagingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticlePagingScrollView.h; sourceTree = "<group>"; };
 		DFCD26BF1517490C00E12DE8 /* ArticlePagingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticlePagingScrollView.m; sourceTree = "<group>"; };
@@ -532,7 +528,6 @@
 		DFDE4331151873A5002DAB40 /* ContentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentViewController.xib; sourceTree = "<group>"; };
 		DFDE4334151877EE002DAB40 /* UIApplication+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Addition.h"; sourceTree = "<group>"; };
 		DFDE4335151877EF002DAB40 /* UIApplication+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Addition.m"; sourceTree = "<group>"; };
-		DFDE433715187B1C002DAB40 /* article_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = article_bg.png; sourceTree = "<group>"; };
 		DFDE43391518822E002DAB40 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		DFDE433A1518822E002DAB40 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		DFDE433D15188D4E002DAB40 /* content_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "content_bg@2x.png"; sourceTree = "<group>"; };
@@ -881,8 +876,6 @@
 				DF8104D9151C3D8200826999 /* timescroll_minutehand@2x.png */,
 				DF8104DA151C3D8200826999 /* timescroll_pointer.png */,
 				DF8104DB151C3D8200826999 /* timescroll_pointer@2x.png */,
-				DF8499631519C6BE00D1F749 /* cover_bg.png */,
-				DF8499641519C6BE00D1F749 /* cover_bg@2x.png */,
 				DF8499611519C56200D1F749 /* sample-baby.jpg */,
 				DF8499571519B61400D1F749 /* photo_default.png */,
 				DF8499581519B61400D1F749 /* photo_frame.png */,
@@ -891,7 +884,6 @@
 				DFDE433D15188D4E002DAB40 /* content_bg@2x.png */,
 				DFDE43391518822E002DAB40 /* Default.png */,
 				DFDE433A1518822E002DAB40 /* Default@2x.png */,
-				DFDE433715187B1C002DAB40 /* article_bg.png */,
 				DFDE430415186219002DAB40 /* label_white.png */,
 				DFDE430515186219002DAB40 /* label_white@2x.png */,
 				DFDE430615186219002DAB40 /* label.png */,
@@ -916,7 +908,6 @@
 				DF526CF01518206000587510 /* bkgd_login_signup@2x.png */,
 				DF15461D15181CA20069AB2F /* pageControlStateHighlighted.png */,
 				DF15461E15181CA20069AB2F /* pageControlStateNormal.png */,
-				DFCD26BA151743F000E12DE8 /* tabview_bg.png */,
 				DFDD776A1516204C00F62582 /* bg-addbutton-highlighted.png */,
 				DFDD776B1516204C00F62582 /* bg-addbutton-highlighted@2x.png */,
 				DFDD776C1516204C00F62582 /* bg-addbutton.png */,
@@ -995,6 +986,8 @@
 		DFDE4316151866AC002DAB40 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				DF01107C1522A49000DD843C /* NSDate+Helper.h */,
+				DF01107D1522A49000DD843C /* NSDate+Helper.m */,
 				DF7F4245152187F40068F10E /* AUISelectiveBordersLayer.h */,
 				DF7F4246152187F40068F10E /* AUISelectiveBordersLayer.m */,
 				DF7F4247152187F40068F10E /* UIView+AUISelectiveBorder.h */,
@@ -1113,7 +1106,6 @@
 				DFDD77AB1516204C00F62582 /* toolbar_share@2x.png in Resources */,
 				DFDD77AC1516204C00F62582 /* toolbar_tag.png in Resources */,
 				DFDD77AD1516204C00F62582 /* toolbar_tag@2x.png in Resources */,
-				DFCD26BB151743F000E12DE8 /* tabview_bg.png in Resources */,
 				DFCD26BD1517470C00E12DE8 /* TestView.xib in Resources */,
 				DF15461F15181CA20069AB2F /* pageControlStateHighlighted.png in Resources */,
 				DF15462015181CA20069AB2F /* pageControlStateNormal.png in Resources */,
@@ -1146,7 +1138,6 @@
 				DFDE43151518637C002DAB40 /* LabelViewController.xib in Resources */,
 				DFDE432A15187049002DAB40 /* LabelProperty-Config.plist in Resources */,
 				DFDE4333151873A6002DAB40 /* ContentViewController.xib in Resources */,
-				DFDE433815187B1D002DAB40 /* article_bg.png in Resources */,
 				DFDE433B1518822E002DAB40 /* Default.png in Resources */,
 				DFDE433C1518822E002DAB40 /* Default@2x.png in Resources */,
 				DFDE433E15188D4F002DAB40 /* content_bg@2x.png in Resources */,
@@ -1158,8 +1149,6 @@
 				DF84995A1519B61400D1F749 /* photo_frame.png in Resources */,
 				DF8499601519BAA600D1F749 /* CoverView.xib in Resources */,
 				DF8499621519C56200D1F749 /* sample-baby.jpg in Resources */,
-				DF8499651519C6BE00D1F749 /* cover_bg.png in Resources */,
-				DF8499661519C6BE00D1F749 /* cover_bg@2x.png in Resources */,
 				DF84996B1519D22B00D1F749 /* StaticContentViewController.xib in Resources */,
 				DFD625CF151A0AC700902D84 /* CoverViewController.xib in Resources */,
 				DFD625D2151A0DEB00902D84 /* ArticleView.xib in Resources */,
@@ -1323,6 +1312,7 @@
 				DF7F424A152187F50068F10E /* UIView+AUISelectiveBorder.m in Sources */,
 				DF7F42B91521C3DC0068F10E /* TimeLineProvider.m in Sources */,
 				DF7F42BC1521CEF50068F10E /* UITableView+Addition.m in Sources */,
+				DF01107E1522A49000DD843C /* NSDate+Helper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
